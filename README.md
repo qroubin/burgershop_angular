@@ -31,4 +31,3 @@ the restaurant service
 ## Tests
 To execute tests for the backend you can use "mvn test" inside the root folder.
 To execute tests for the frontend you can use "ng test" inside of src/main/front/burgers.
-The pipeline of Gitlab CI should launch the backend tests automatically each time something is pushed on the repository.
