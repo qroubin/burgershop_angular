@@ -1,0 +1,33 @@
+#ordersMainDiv {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ordersTableDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Add border radius */
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    padding: 10px; /* Add padding around the ordersTableDiv */
+}
+
+#ordersTableLeft {
+    border-right: 2px solid #333333; /* Add right border */
+}
+
+#ordersTableLeftInner,
+#ordersTableRightInner {
+    padding: 10px; /* Add padding around the text inside */
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}

@@ -1,0 +1,80 @@
+/* Application-wide Styles */
+.bold {
+  font-weight: bold;
+}
+
+.container-appComponent {
+    font-family: 'Montserrat', sans-serif; /* Change font family for the entire website */
+    margin: 2em;
+}
+
+h1 {
+    color: #369;
+    font-size: 2rem; /* Adjusted font size */
+    text-align: center; /* Center the title */
+    margin-bottom: 1rem; /* Add spacing below the title */
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    margin-bottom: 2rem; /* Add spacing below the nav */
+}
+
+nav a {
+    margin: 0 1rem; /* Add spacing between nav items */
+    text-decoration: none;
+    color: #666666;
+    font-size: 1rem; /* Adjusted font size */
+    padding: 0.5rem 1rem; /* Adjusted padding */
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+nav a:hover {
+    background-color: #84bbf3;
+    color: #ffffff;
+}
+
+router-outlet {
+    display: block; /* Ensure router-outlet is a block element */
+}
+
+/* Common button styles */
+.button {
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 1rem; /* Adjusted font size */
+    padding: 0.5rem 1rem; /* Adjusted padding */
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.buttonNavBar {
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+/* Active button style */
+.activebutton {
+    background-color: #bddbfa;
+    color: #ffffff;
+    box-shadow: inset 0 1px 0 0 #dcecfb;
+    border: 1px solid #84bbf3;
+    text-shadow: 0 1px 0 #528ecc;
+}

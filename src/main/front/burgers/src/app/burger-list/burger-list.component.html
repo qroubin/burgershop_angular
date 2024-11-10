@@ -1,0 +1,22 @@
+<h2>{{title}}</h2>
+<button class="button" #listButton
+    (click)="burgerListButtonHandler()">{{burgerListButtonLabel}}
+</button>
+<ul class="burger-list">
+    <li class="burger-item" *ngFor="let burger of burgerService.burgers">
+        <h3>
+            <input type="checkbox" (change)="toggleSelectedBurgerId(burger.id)" [checked]="isBurgerChecked(burger.id)" id={{burger.id}}/>
+            Details du burger #{{burger.id}}
+        </h3>
+        <div class="burger-item-content">
+            <span>Id: </span>{{burger.id}}
+        </div>
+        <div>
+            <span>Nom: </span>{{burger.name}}
+        </div>
+        <div>
+            <span>Ingredients: </span>{{burger.ingredients}}
+        </div>
+        <div class="errorMsg" *ngIf="errorMsgUnderBurger.has(burger.id)">{{ errorMsgUnderBurger.get(burger.id) }}</div>
+    </li>
+</ul>

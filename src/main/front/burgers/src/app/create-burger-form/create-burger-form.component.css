@@ -1,0 +1,41 @@
+/* Style for container */
+.container-formComponent {
+    max-width: 600px;
+}
+
+/* Style for form container */
+form {
+    max-width: 400px;
+}
+
+/* Style for form labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for form inputs */
+form input[type="text"] {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for form button */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style for button hover effect */
+form button:hover {
+    background-color: #45a049;
+}

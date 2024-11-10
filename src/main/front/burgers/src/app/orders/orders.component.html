@@ -1,0 +1,31 @@
+<h1>{{title}}</h1>
+<div id="ordersMainDiv">
+    <app-burger-list
+    [burgerListButtonLabel]="'Commander'"
+    [burgerListButtonHandler]="onPostOrderButton"
+    ></app-burger-list>
+    <div id="ordersTableDiv">
+        <div id="ordersTableLeft">
+            <h2>Commandes en cours</h2>
+            <div id="ordersTableLeftInner">
+                <li *ngFor="let order of orderService.ordersInProcess">
+                    Commande #{{order.id}}:
+                    <span *ngIf="order.burgers && order.burgers.length > 0">
+                        {{ getBurgersToString(order.burgers) }}
+                    </span>
+                </li>
+            </div>
+        </div>
+        <div id="ordersTableRight">
+            <h2>Commandes terminées</h2>
+            <div id="ordersTableRightInner">
+                <li *ngFor="let order of orderService.ordersProcessed">
+                    Commande #{{order.id}}:
+                    <span *ngIf="order.burgers && order.burgers.length > 0">
+                        {{ getBurgersToString(order.burgers) }}
+                    </span>
+                </li>
+            </div>
+        </div>
+    </div>
+</div>

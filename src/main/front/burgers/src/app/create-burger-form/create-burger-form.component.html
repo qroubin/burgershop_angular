@@ -1,0 +1,13 @@
+<div class="container-formComponent">
+    <h2>{{title}}</h2>
+    <form>
+        <label for="burgerName">Nom du burger:</label><br/>
+        <input type="text" id="burgerNameInput" name="burgerName" #burgerName><br/>
+        <label for="burgerIngredients">Ingredients (séparés par des virgules sans espaces):</label><br/>
+        <input type="text" id="burgerIngredientsInput" name="burgerIngredients" #burgerIngredients><br/>
+        <button type="button" id="addBurgerButton"
+        (click)="onAddBurgerButton(burgerName.value, burgerIngredients.value); burgerName.value = ''; burgerIngredients.value = ''">
+        Ajouter
+        </button>
+    </form>
+</div>
