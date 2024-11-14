@@ -1,9 +1,10 @@
-# burgers
+# Burger Shop Angular
 
 
 
 ## Introduction
 This project is a burger shop website that uses both angular and java spring-boot.
+It was used as training for my intership at SII Group and was imported from the company's Gitlab, thus the few commits on this repo.
 There are two main pages accessible from the navbar : "Administration" and "Commandes" (administration and orders).
 On the first one you can see the list of available burgers, select them via checkboxes and delete them. You can also
 create a new burger using a form by giving it a name and a list of ingredients.
